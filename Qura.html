@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qura is a privacy-focused search engine and web browser tailored for Indian users.">
+    <title>Qura</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0c001f;
+            color: #ffffff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .navbar {
+            background-color: #1a0a3d;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .navbar img {
+            height: 40px;
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 25px;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .content h1, .content h2, .content h3 {
+            margin: 20px 0;
+        }
+
+        .content p {
+            font-size: 23px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 23px;
+            text-align: left;
+        }
+
+        .welcome-section {
+            color: #000000;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .welcome-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .languages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .languages i:hover {
+            transform: scale(1.2);
+        }
+
+        .language {
+            margin: 20px;
+            text-align: center;
+            animation: branchGrow 1s ease-in-out;
+        }
+
+        .language i {
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        .language-html i {
+            color: #e34c26;
+        }
+
+        .language-css i {
+            color: #1572b6;
+        }
+
+        .language-js i {
+            color: #f7df1e;
+        }
+
+        .language-java i {
+            color: #007396;
+        }
+
+        .language-php i {
+            color: #777bb4;
+        }
+
+        .language-nosql i {
+            color: #4caf50;
+        }
+
+        .language-python i {
+            color: #3776ab;
+        }
+
+        .language-cpp i {
+            color: #00599c;
+        }
+
+        .language-nodejs i {
+            color: #68a063;
+        }
+
+        .language-reactjs i {
+            color: #61dafb;
+        }
+
+        .language-figma i {
+            color: #f24e1e;
+        }
+
+        .language-aws i {
+            color: #ff9900;
+        }
+
+        .language-dsa i {
+            color: #4caf50;
+        }
+
+        .language-mongodb i {
+            color: #47a248;
+        }
+
+        .footer {
+            background-color: #0c001f;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .footer p {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .footer button {
+            background-color: #6a1b9a;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #ffffff;
+            animation: slideIn 1s ease-in-out;
+        }
+        .footer button:hover{
+            transform: scale(1.2);
+        }
+
+        .footer .social-icons {
+            margin-top: 20px;
+        }
+
+        .footer .social-icons i {
+            font-size: 28px;
+            margin: 0 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer .social-icons i:hover{
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 600px) {
+            .content h1 { font-size: 24px; }
+            .content h2 { font-size: 22px; }
+            .content p { font-size: 18px; }
+
+        }
+    </style>
+<body>
+    <div class="navbar">
+     <img alt="Qura logo" src="vaibhav_icon-removebg-preview.png" style="margin-left: 20px;" />
+     <a href="index.html">
+      Home
+     </a>
+     <a href="service.html">
+      Services
+     </a>
+    </div>
+    <div class="content">
+     <h1>
+      What is Qura
+     </h1>
+     <h2>
+      Project Vision:
+     </h2>
+     <p>
+      To empower India's digital sovereignty by creating a robust, secure, and privacy-focused search engine and web browser.
+     </p>
+     <p>
+      To provide a seamless and personalized user experience tailored to Indian users' preferences and language needs.
+     </p>
+     <p>
+      To foster innovation and contribute to India's growing tech ecosystem.
+     </p>
+     <h2>
+      Key Features:
+     </h2>
+     <h3>
+      Search Engine:
+     </h3>
+     <ul>
+      <li>
+       Fast and accurate search results
+      </li>
+      <li>
+       Intelligent search algorithms to understand user intent
+      </li>
+      <li>
+       Comprehensive search capabilities across various domains (web, images, news, videos)
+      </li>
+      <li>
+       Multilingual search support (Hindi, English, and other regional languages)
+      </li>
+      <li>
+       Privacy-focused search with minimal data collection
+      </li>
+     </ul>
+     <h3>
+      Web Browser:
+     </h3>
+     <ul>
+      <li>
+       Secure and private browsing experience
+      </li>
+      <li>
+       Ad-blocker and tracker blocker for improved performance and privacy
+      </li>
+      <li>
+       Built-in features like password manager, bookmark manager, and incognito mode
+      </li>
+      <li>
+       Customizable interface and themes
+      </li>
+      <li>
+       Integration with My Qura search engine
+      </li>
+      <li>
+       Support for popular extensions and web standards
+      </li>
+     </ul>
+    </div>
+    <div class="welcome-section">
+     <img alt="Qura logo" height="400" src="Screenshot 2024-10-18 123005.png" width="1200"/>
+    </div>
+    <center><h2>Language Use in Project</h2></center>
+    <div class="languages">
+      <div class="language language-html">
+       <i class="fab fa-html5"></i>
+       <p>HTML</p>
+      </div>
+      <div class="language language-css">
+       <i class="fab fa-css3-alt"></i>
+       <p>CSS</p>
+      </div>
+      <div class="language language-js">
+       <i class="fab fa-js"></i>
+       <p>JavaScript</p>
+      </div>
+      <div class="language language-java">
+       <i class="fab fa-java"></i>
+       <p>Java</p>
+      </div>
+      <div class="language language-php">
+       <i class="fab fa-php"></i>
+       <p>PHP</p>
+      </div>
+      <div class="language language-nosql">
+       <i class="fas fa-database"></i>
+       <p>NoSQL Database</p>
+      </div>
+      <div class="language language-python">
+       <i class="fab fa-python"></i>
+       <p>Python</p>
+      </div>
+      <div class="language language-cpp">
+       <i class="fas fa-cube"></i>
+       <p>C++</p>
+      </div>
+      <div class="language language-nodejs">
+       <i class="fab fa-node-js"></i>
+       <p>Node.js</p>
+      </div>
+      <div class="language language-reactjs">
+       <i class="fab fa-react"></i>
+       <p>React.js</p>
+      </div>
+      <div class="language language-figma">
+       <i class="fab fa-figma"></i>
+       <p>Figma</p>
+      </div>
+      <div class="language language-aws">
+       <i class="fab fa-aws"></i>
+       <p>AWS</p>
+      </div>
+      <div class="language language-dsa">
+       <i class="fas fa-code"></i>
+       <p>DSA</p>
+      </div>
+      <div class="language language-mongodb">
+       <i class="fas fa-leaf"></i>
+       <p>MongoDB</p>
+      </div>
+     </div>
+    <div class="footer">
+     <p>
+     If You Want To Join Qura Than Click It
+     </p>
+     <a href="https://forms.gle/cBNFCHEEett7L9Y77">
+     <button>
+      Click Here
+     </button>
+    </a>
+     <div class="social-icons">
+      <i class="fas fa-globe">
+      </i>
+      <i class="fas fa-at">
+      </i>
+      <a href="https://www.instagram.com/its_vaibhavchaudhary?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+      <i class="fab fa-instagram">
+      </i>
+       </a>
+      <i class="fas fa-wifi">
+      </i>
+     </div>
+     <p>
+      All Rights Go To @VaibhavChaudhary
+     </p>
+    </div>
+   </body>
+  </html>    
