@@ -1,0 +1,388 @@
+<html>
+ <head>
+  <title>
+   Vaibhav Official Website
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0d0221;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .header {
+            background-color: #1a0333;
+            padding: 20px;
+            text-align: center;
+            animation: slideInDown 1s ease-in-out;
+        }
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 25px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .intro {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .intro img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .intro h2 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #aaa;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .work-experience {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .work-experience h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .work-experience .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .work-experience .project {
+            background-color: #2a044a;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 600px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .work-experience .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .work-experience .project img {
+            width: 100%;
+            border-radius: 10px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .work-experience .project h3 {
+            font-size: 40px;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .work-experience .project p {
+            font-size: 20px;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .work-experience .project a {
+            color: inherit;
+            text-decoration: none;
+        }
+        .languages {
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .languages i {
+            font-size: 80px;
+            margin: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .languages i:hover {
+            transform: scale(1.2);
+        }
+        .languages .fa-html5 {
+            color: #e34f26;
+        }
+        .languages .fa-css3-alt {
+            color: #1572b6;
+        }
+        .languages .fa-js {
+            color: #f7df1e;
+        }
+        .languages .fa-react {
+            color: #61dafb;
+        }
+        .languages .fa-node-js {
+            color: #339933;
+        }
+        .languages .fa-python {
+            color: #3776ab;
+        }
+        .languages .fa-java {
+            color: #007396;
+        }
+        .languages .fa-php {
+            color: #777bb4;
+        }
+        .languages .fa-SQL {
+            color: white;
+        }
+        .featured-projects {
+            text-align: center;
+            padding: 50px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .featured-projects h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .featured-projects .project {
+            background-color: #2a044a;
+            border-radius: 10px;
+            margin: 10px auto;
+            padding: 20px;
+            width: 80%;
+            text-align: left;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .featured-projects .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .featured-projects .project img {
+            width: 100%;
+            border-radius: 10px;
+            animation: zoomIn 1s ease-in-out;
+        }
+        .featured-projects .project h3 {
+            font-size: 30px;
+            margin: 10px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .featured-projects .project p {
+            font-size: 20px;
+            color: white;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a0333;
+            animation: slideInUp 1s ease-in-out;
+        }
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 25px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .footer .social-icons a {
+            font-size: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <nav>
+    <a href="#">
+     Home
+    </a> 
+    <a href="Qura.html">
+     Project
+    </a>
+    <a href="#">
+     Feature Project
+    </a>
+   </nav>
+  </div>
+  <div class="intro">
+   <img alt="Profile Picture" height="100" src="my image.jpg" width="100"/>
+   <h2>
+    Judges a book by its cover..
+   </h2>
+   <h2>
+    Vaibhav Chaudhary
+   </h2>
+   <p>
+    I'm a Software Engineer.
+   </p>
+   <p>
+    Currently, I'm a Software Engineer at Qura
+   </p>
+   <p>
+    I am a full-stack developer, Software Developer as well as a UI Designer...I am currently working on my biggest project QURA Project. If any of you want to work on my project QURA, the links are in the footer.
+   </p>
+  </div>
+  <div class="work-experience">
+   <h2>
+    Work Experience
+   </h2>
+   <div class="projects">
+    <a href="#">
+     <div class="project">
+      <img alt="Food Website" height="400" src="food img.jpg" width="600"/>
+      <h3>
+       Food Website
+      </h3>
+      <p>
+       Food Website is My first Project.
+      </p>
+     </div>
+    </a>
+    <a href="https://forms.gle/cBNFCHEEett7L9Y77">
+     <div class="project">
+      <img alt="Project Qura" height="400" src="Screenshot 2024-10-18 123005.png" width="600"/>
+      <h3>
+       Project Qura
+      </h3>
+      <p>
+        Qura Is a Unique and Intresting Project In my life..
+        If u want to join Qura than Click it..
+      </p>
+     </div>
+    </a>
+   </div>
+   <div class="projects">
+    <a href="#">
+     <div class="project">
+      <img alt="Mobile Application" height="400" src="mobile interface.jpg" width="600"/>
+      <h3>
+       Mobile Application
+      </h3>
+      <p>
+        Take your client onboard seamlessly by our amazing
+        tool of digital onboard process.        
+      </p>
+     </div>
+    </a>
+    <a href="#">
+     <div class="project">
+      <img alt="Medical Website" height="400" src="medical website.avif" width="600"/>
+      <h3>
+       Medical Website
+      </h3>
+      <p>
+       If you want any website or design made then you can contact me
+      </p>
+     </div>
+    </a>
+   </div>
+  </div>
+  <div class="languages">
+   <i class="fab fa-html5" title="HTML5">
+   </i>
+   <i class="fab fa-css3-alt" title="CSS3">
+   </i>
+   <i class="fab fa-js" title="JavaScript">
+   </i>
+   <i class="fab fa-react" title="React">
+   </i>
+   <i class="fab fa-node-js" title="Node.js">
+   </i>
+   <i class="fab fa-python" title="Python">
+   </i>
+   <i class="fab fa-java" title="Java">
+   </i>
+   <i class="fab fa-php" title="PHP">
+   </i>
+  </div>
+  <div class="featured-projects">
+   <h2>
+    Featured Projects
+   </h2>
+   <a href="Qura.html">
+   <div class="project">
+    <img alt="Qura Search Engine" height="600" src="Screenshot 2024-10-18 123005.png" width="400"/>
+    <h3>
+     Qura Search Engine
+    </h3>
+    <p>
+     Initiates First Search Engine over Web Browser With Advance Features. Like AI-Chatbot and many more. Our aim is to launch Qura by the end of 2023.
+    </p>
+    </a>
+   </div>
+   <div class="project">
+    <img alt="My AI" height="600" src="Ai developer.jpg" width="400"/>
+    <h3>
+     My AI
+    </h3>
+    <p>
+     AI-Driven Chatbot for specific tasks. Helps busy users and will boost search by AI with Chat.
+    </p>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    If you want to connect with me then click on the icon given below or mail me..
+   </p>
+   <div class="social-icons">
+    <a href="#">
+     <i class="fab fa-github">
+     </i>
+    </a>
+    <a href="https://www.linkedin.com/in/vaibhav-chaudhary-65a207296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+     <i class="fab fa-linkedin">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-twitter">
+     </i>
+    <a href="https://www.instagram.com/its_vaibhavchaudhary?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+   </div>
+   <p>
+    Contact: vaibhavchaudhary8181@gmail.com
+    <br>
+    All Rights Go to@VaibhavCompany
+   </p>
+  </div>
+ </body>
+</html>
